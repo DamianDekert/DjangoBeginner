@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'learning_logs',
     'users',
 
+    #Aplikacje innych firm
+    'bootstrap4',
+
     #Default
     'django.contrib.admin',
     'django.contrib.auth',
@@ -127,3 +130,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'users:login'
+
+#Ustawienia Heroku
+import django_heroku
+django_heroku.settings(locals())
